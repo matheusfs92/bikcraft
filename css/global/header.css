@@ -3,50 +3,58 @@
 }
 
 .header {
-  display: flex;
+  display: flex; /*vai colocar a coluna logo do lado da home*/
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  justify-content: space-between;/*vai colocar um espaço entre logo e home*/
+  align-items: center; /*vai alinhar no centro os intens*/
+  padding-top: 20px;/*vai desgrudar o logo e home - teste*/
+  padding-bottom: 20px; /**/
 }
 
 .header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: flex; /*colocar cada li do lado da outra*/
+  flex-wrap: wrap;/*vai quebrar o menu quando diminuir o tamanho da tela*/
+  gap: 40px;/*vai quebrar antes de 40pix*/
 }
 
 .header-menu a {
-  display: inline-block;
-  padding: 16px 0px;
+  display: inline-block;/*quando um intem cair do lado do outro o padding nao funcinar corretamente*/
+  padding: 16px 0px;/*aumentar a area de click da home*/
   position: relative;
 }
 
-.header-menu a:after {
+/**/
+
+.header-menu a:after {/*vai dar aquele afeito de quando passo a mao por cima aparece uma lista branca*/
   content: "";
   display: block;
   height: 2px;
   width: 0px;
   background: var(--cor-0);
   margin-top: 4px;
-  transition: 0.3s;
+  transition: 0.3s;/*vai dar um afeito home-bicicleta, uma lista branca para aparecer devagar*/
   position: absolute;
 }
 
-.header-menu a:hover:after {
+/*poderia fazer assim tambem
+.header-menu a:hover{background-color:2E2E2E}
+Quando passar a mao por cima home-bicletas vai mudar a cor indicando q é clicavel
+*/
+
+
+.header-menu a:hover:after {/*preciso disso para funcinar quando passar o mause em cima*/
   width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px)/*vai mudar o site para se adapitar a telas menores*/ { 
   .header-menu {
     gap: 20px;
   }
   .header-menu a {
     background: var(--cor-11);
-    padding: 12px 16px;
-    border-radius: 4px;
+    padding: 12px 16px; /*aumentar a area de click da home*/
+    border-radius: 4px; /*vai dar um arrendamento de borda*/
   }
   .header-menu a:hover {
     background-color: var(--cor-10);
@@ -58,10 +66,12 @@
 
 @media (max-width: 600px) {
   .header-menu {
-    gap: 12px;
+    gap: 12px; /*vamos diminuir para caber os batao da home lado a lado quando a tela ser menor que isso*/
+
   }
   .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: 8px 12px; /*aumentar a area de click da home*/
+    font-size: 14px; /*tamnho da letra*/
+
   }
 }

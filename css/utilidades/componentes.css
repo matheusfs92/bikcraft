@@ -1,4 +1,5 @@
-.container {
+.container { /*vai ficar os intem alinhado ao centro independente do tamnho da pagina
+   - Bicicletas feitas sob medida*/
   box-sizing: border-box;
   max-width: 1200px;
   padding-left: 20px;
@@ -8,13 +9,13 @@
 }
 
 .botao {
-  display: inline-block;
-  padding: 16px 32px;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  border-radius: 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  color: var(--cor-p5);
+  display: inline-block;/*para pegar o padding corretamente */ 
+  padding: 16px 32px;/*tamanho do botao*/
+  background: linear-gradient(#ffbf00, #f2a50c);/*a cor do botao*/
+  border-radius: 4px;/*bordas arendodadas*/
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);/*aqui cria vai ciar um sombra bem pequena no botao*/
+  text-transform: uppercase; /*para tranformar tudo em maiusculas, as letras*/
+  color: var(--cor-p5); /*mudar a cor de dentro do botao*/
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   max-width: max-content;
   border: none;
@@ -22,7 +23,8 @@
 }
 
 .botao:hover {
-  background: linear-gradient(#ffb60d, #e59317);
+  background: linear-gradient(#ffb60d, #e59317);/*vai deixar o botao um pouco escuro,
+   a hora que eu passar o mouse por cima*/
 }
 
 .botao.secundario {

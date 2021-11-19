@@ -1,18 +1,21 @@
 .introducao-bg {
   background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat
     bottom 160px left 20px;
-  box-shadow: inset 0 -120px var(--cor-0);
+  box-shadow: inset 0 -120px var(--cor-0);/*vai dar um sombra, dar o efeito da img indo para baixo da div*/
 }
 
 .introducao {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 40px;
+  grid-template-columns: 1fr 1fr;/* para distribuir espaço que sobra/ vai dividir o conteudo*/
+  gap: 0px 40px;/* para dar uma distancia no conteudo. 
+  coloquei opx por q não quero de cima para baixo entre o item, so vai dar um espeço no lado
+  */
 }
 
 .introducao-conteudo {
-  align-self: end;
-  padding-bottom: 200px;
+  align-self: end; /*vai ficar alinhado em baixo*/
+  padding-bottom: 200px;/*para ficar no meio o conteudo vamos colocar isso -
+   sem isso vai quebrar o Layout por causa da sombra da img que colocamos*/
 }
 
 .introducao img {
@@ -23,7 +26,10 @@
 }
 
 .introducao h1 {
-  margin-bottom: 32px;
+  margin-bottom: 32px; /*para dar um espaço entre - Bicicletas feitas sob medida 
+  e o texto 2
+  Bicicletas elétricas de alta precisão e qualidade, 
+  feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.*/
 }
 
 .introducao p {
@@ -34,7 +40,7 @@
   .introducao-bg {
     background: var(--cor-11);
     padding-top: 40px;
-    box-shadow: inset 0 -60px #ffffff;
+    box-shadow: inset 0 -60px #ffffff; /*vai aumentar a sombra um pouco. testar*/
   }
   .introducao {
     grid-template-columns: 1fr;
