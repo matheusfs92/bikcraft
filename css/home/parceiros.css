@@ -7,7 +7,7 @@
   margin-bottom: 60px;
 }
 
-.parceiros ul {
+.parceiros ul { /*coluna 1 em baixo do outro em foma de coluna - veja no site final */
   padding: 0 20px;
   max-width: 1400px;
   display: grid;
